@@ -26,7 +26,7 @@ class DirectoriosController extends Controller
         $contactos = Contacto::where('codigoEntrada',$id)->get();
         $directorio = Directorio::find($id);
 
-        echo $contactos;
+       // echo $contactos;
 
         return view('vercontactos',compact('contactos','directorio'));
     }
