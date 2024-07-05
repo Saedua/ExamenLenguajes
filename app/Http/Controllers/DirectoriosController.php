@@ -43,7 +43,7 @@ class DirectoriosController extends Controller
         $directorio = Directorio::find($id);
         $directorio->delete();
 
-        redirect('/directorios/mostrar');
+        return redirect('/directorios/mostrar');
     }
 
     public function guardar(Request $request){
@@ -56,5 +56,9 @@ class DirectoriosController extends Controller
         $nvoDirectorio->save();
 
         return redirect('/directorios/mostrar');
+    }
+
+    public function buscar($correo){
+        echo $correo;
     }
 }

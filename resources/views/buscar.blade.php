@@ -46,8 +46,8 @@
                                     <label for="">Correo</label>
                                     <input type="text" class="form-control" name ="correo">
                                     <p>
-                                        <a href="#" class="btn btn-success">Buscar</a>
-                                        <a href="#" class="btn btn-info">Regresar</a>
+                                        <a href="{{route('directorios.buscar.correo','sdf')}}" class="btn btn-success"><button hidden type="submit"></button>Buscar</a>
+                                        <a href="{{route('directorios.mostrar')}}" class="btn btn-info">Regresar</a>
                                     </p>                                    
                                 </p>
                             </div>
