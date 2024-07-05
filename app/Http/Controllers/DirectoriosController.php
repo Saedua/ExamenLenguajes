@@ -58,7 +58,11 @@ class DirectoriosController extends Controller
         return redirect('/directorios/mostrar');
     }
 
-    public function buscar($correo){
-        echo $correo;
+    public function buscar(Request $request){
+        $correo = $request->correo;
+
+        $directorio = Directorio::where('correo',$correo)->get();
+
+        return redirect('/directorios/ver/'.$directorio[0]->codigoEntrada);
     }
 }

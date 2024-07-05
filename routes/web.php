@@ -21,7 +21,7 @@ Route::get('/directorios/destroy/{id}',[DirectoriosController::class, 'destroy']
 
 Route::post('/directorios/agregar/guardar',[DirectoriosController::class,'guardar'])->name('directorios.guardar');
 
-Route::get('/directorios/buscar/{correo}',[DirectoriosController::class,'buscar'])->name('directorios.buscar.correo');
+Route::get('/directorios/buscar/correo',[DirectoriosController::class,'buscar'])->name('directorios.buscarcorreo');
 
 Route::get('/contactos/agregar/{codigo}',[ContactosController::class,'agregar'])->name('contactos.agregar');
 
